@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8879716F "
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_close"
+            android:background="@null"
+            />
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="225dp"
+        android:layout_height="221dp"
+        android:layout_centerInParent="true"
+
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@android:drawable/ic_media_play"
+        android:elevation="50dp"/>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:orientation="horizontal"
+        >
+
+
+        <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/stat_sys_download"
+        android:background="@null"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+
+            />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="movie name"
+
+            />
+    </LinearLayout>
+
+    </RelativeLayout></androidx.cardview.widget.CardView></RelativeLayout>
